@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #707274, #000000, #ff0000);
+    background: linear-gradient(135deg, #707274, #000000, #15016d);
     color: rgb(255, 255, 255);
     min-height: 100vh;
     margin: 0;
@@ -40,12 +40,12 @@ body {
 }
 .hero-row
 {
-    background-color: rgba(119, 0, 0, 0.7);
+    background-color: rgba(12, 0, 119, 0.7);
     border-radius: 20px;
 }
 .about-row
 {
-    background-color: rgba(119, 0, 0, 0.7);
+    background-color: rgba(12, 0, 119, 0.7);
     border-radius: 20px;
 }
 .heading1{
@@ -59,7 +59,7 @@ body {
 .heading1:hover {
     font-size: 55px;
     font-weight: 700;
-    color: #faaeae;
+    color: #bcaefa;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     font-style: italic;
     transition: 0.9s;
@@ -115,7 +115,7 @@ body {
 .heading2:hover {
     font-size: 47px;
     font-weight: 700;
-    color: #faaeae;
+    color: #b6aefa;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
     font-style: italic;
     transition: 0.9s;
@@ -131,8 +131,6 @@ body {
     padding: 50px 20px;
     margin: 50px 0;
 }
-
-/* Background Image */
 .islamic-section::before{
     content: "";
     position: absolute;
@@ -141,8 +139,6 @@ body {
         center center/cover no-repeat;
     z-index: 1;
 }
-
-/* Dark Overlay */
 .islamic-section::after{
     content: "";
     position: absolute;
@@ -150,8 +146,6 @@ body {
     background: rgba(0, 0, 0, 0.65);
     z-index: 2;
 }
-
-/* Content Above Background */
 .islamic-section .content{
     position: relative;
     z-index: 3;
@@ -174,4 +168,381 @@ body {
 
 .islamic-section img:hover{
     transform: scale(1.03);
+}
+.muharram-section{
+    padding:100px 8%;
+    background-color: rgba(12, 0, 119, 0.7);
+    border-radius: 20px;
+        color:white;
+    text-align:center;
+}
+
+.heading{
+    font-size:45px;
+    font-weight: 600;
+    font-style: italic;
+    color:#d4af37;
+    margin-bottom:20px;
+    text-transform:uppercase;
+}
+.heading:hover{
+    font-size:48px;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    color:#d4af37;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+
+.section-title p{
+    max-width:800px;
+    margin:auto;
+    color:#d8d8d8;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.muharram-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:70px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(212,175,55,0.3);
+    border-radius:20px;
+    padding:35px 25px;
+    transition:.5s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 10px 30px rgba(255, 255, 255, 0.774);
+    border-color:#d4af37;
+}
+
+.icon{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#cebf38;
+    margin-bottom:15px;
+    font-size:1.4rem;
+}
+
+.card p{
+    color:#e0e0e0;
+    line-height:1.7;
+}
+.months-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:50px;
+    align-items:start; 
+}
+
+.month-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(212,175,55,.3);
+    border-radius:20px;
+    overflow:hidden;
+    cursor:pointer;
+    transition:.4s;
+    margin-bottom:15px;
+}
+.months-container{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+.month-card:hover{
+    transform:translateY(-8px);
+    border-color:#5437d4;
+}
+
+.month-header{
+    padding:25px;
+    text-align:center;
+}
+
+.month-header span{
+    display:inline-block;
+    width:60px;
+    height:60px;
+    line-height:60px;
+    border-radius:50%;
+    background:#5437d4;
+    color:#04152d;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.month-header h3{
+    color:white;
+}
+
+.month-content{
+    max-height:0;
+    overflow:hidden;
+    transition:.5s ease;
+    background:rgba(212,175,55,.08);
+}
+
+.month-content p{
+    color:#e8e8e8;
+    padding:20px;
+    line-height:1.8;
+}
+
+.month-card.active .month-content{
+    max-height:200px;
+} 
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    background:#1b007c;
+    color:#ffffff;
+    font-size: 1.2rem;
+    font-weight:bold;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+    border:1px solid rgb(255, 255, 255);
+}
+.btn:hover{
+    border:1px solid #2600ff;
+    background:#000000;
+    color:#ffffff;
+    transform:scale(1.05);
+}
+.dua-section{
+    padding:100px 8%;
+    background-color: rgba(12, 0, 119, 0.7);
+    border-radius: 20px;
+    color:white;
+}
+
+.dua-container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.dua-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.dua-icon{
+    font-size:3rem;
+}
+
+.dua-header h2{
+    color:#d4af37;
+    font-size:45px;
+    font-style: italic;
+    font-weight: 700;
+    margin:15px 0;
+}
+
+.dua-header p{
+    color:#d9d9d9;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.dua-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(212,175,55,.3);
+    border-radius:25px;
+    padding:50px;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:.4s;
+}
+
+.dua-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(212,175,55,.15);
+}
+
+.dua-card h3{
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.arabic-dua{
+    font-size:2rem;
+    line-height:2;
+    margin-bottom:35px;
+    color:#fff;
+    direction:rtl;
+}
+
+.translation{
+    color:#e8e8e8;
+    font-size:1.1rem;
+    line-height:1.8;
+    max-width:700px;
+    margin:auto;
+}
+
+.dua-btn{
+    margin-top:30px;
+    padding:14px 35px;
+    border:none;
+    border-radius:50px;
+    background:#d4af37;
+    color:#04152d;
+    font-weight:600;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.dua-btn:hover{
+    transform:scale(1.05);
+}
+
+.footer {
+    background: linear-gradient(135deg, #7c6d6d, #000000, #160172);
+    background-size: cover;
+    background-position: center;
+    border-top: 4px solid rgb(17, 0, 255);
+    color: rgb(0, 0, 0);
+}
+
+/* Footer Heading */
+.footer h5 {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.footer h5::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background: rgb(68, 0, 255);
+    display: block;
+    margin-top: 8px;
+}
+
+/* Paragraphs */
+.footer p {
+    color: #ffffff;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* Footer Image */
+.footer-img {
+    width: 220px;
+    border-radius: 15px;
+    border: 2px solid rgb(4, 0, 255);
+    transition: 0.4s;
+}
+
+.footer-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgb(17, 0, 255);
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer ul li {
+    list-style: none;
+    margin-bottom: 14px;
+}
+
+.footer ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.footer ul li a:hover {
+    color: rgb(38, 0, 255);
+    padding-left: 6px;
+}
+
+.para-e a {
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+}
+
+.para-e a:hover {
+    text-decoration: underline;
+}
+
+.social-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.imgs {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+
+.imgs:hover {
+    transform: rotate(10deg) scale(1.1);
+    box-shadow: 0 0 12px rgb(0, 17, 255);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+@media(max-width:768px){
+
+    .section-title h2{
+        font-size:2.2rem;
+    }
+
+    .section-title p{
+        font-size:1rem;
+    }
+     .dua-header h2{
+        font-size:2.2rem;
+    }
+
+    .arabic-dua{
+        font-size:1.4rem;
+    }
+
+    .dua-card{
+        padding:30px 20px;
+    }
 }
