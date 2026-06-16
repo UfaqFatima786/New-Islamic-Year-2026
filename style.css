@@ -523,7 +523,11 @@ body {
     color: #ffffff;
     font-size: 20px;
 }
-
+@media(max-width:996px){
+    .navbarnavbar{
+        text-align:center;
+    }
+}
 
 @media(max-width:768px){
 
