@@ -1,4 +1,4 @@
-# 🌙 New Islamic Year 2026
+# 🌙 New Islamic Year 1448 AH
 
 A beautifully designed and responsive website created to celebrate and welcome the Islamic New Year 1448 AH. This project provides users with an engaging experience through a modern interface, meaningful content, and attractive visuals related to the significance of Muharram and the Islamic New Year.
 
